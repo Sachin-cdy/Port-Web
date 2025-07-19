@@ -12,18 +12,18 @@ function App() {
   return (
     <>
 
-     <div>
-       <Navbar />
-      <Home />
-      <About />
-      <Portfolio />
-      <Experience />
-      <Contact />
-      <Footer />
-       
-     </div>
-     <Toaster />
-     </>
+      <div>
+        <Navbar />
+        <Home />
+        <About />
+        <Portfolio />
+        <Experience />
+        <Contact />
+        <Footer />
+
+      </div>
+      <Toaster />
+    </>
   )
 }
 

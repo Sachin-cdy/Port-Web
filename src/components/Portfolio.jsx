@@ -9,55 +9,55 @@ import node from "../../public/node.png"
 
 
 function Portfolio() {
-    const cardItems=[
+    const cardItems = [
         {
-            id:1,
-            logo:mongoDB,
-            name:"MongoDB",
+            id: 1,
+            logo: mongoDB,
+            name: "MongoDB",
         },
         {
-            id:2,
-            logo:express,
-            name:"ExpressJS",
+            id: 2,
+            logo: express,
+            name: "ExpressJS",
         },
         {
-            id:3,
-            logo:reactjs,
-            name:"ReactJS",
+            id: 3,
+            logo: reactjs,
+            name: "ReactJS",
         },
         {
-            id:4,
-            logo:node,
-            name:"NodeJS",
+            id: 4,
+            logo: node,
+            name: "NodeJS",
         }
     ]
-  return (
-    <div name="Portfolio" className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-20">
-        <div>
-            <h1 className="text-3xl font-bold mb-5">My Portfolio</h1>
-            <span className="underline font-semibold">Featured Project</span>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 my-5 ">
-               
-                {
-                    cardItems.map(({id, logo, name}) =>(
-                        <div className="md:w-[]300px h-[300px] border-color-black[2px] rounded-lg shadow-lg p-1 cursor-pointer hover:scale-110 duration-300" key={id}>
-                            <img src = {logo} className="w-[120px] h-[120px] p-1 rounded-full border-color-black[2px]" alt = ""/>
-                            <div>
-                                <div className='px-2 font-bold text-xl mb-2'>{name}</div>
-                                <p className='px-2 text-gray-600'>Project Description</p>
+    return (
+        <div name="Portfolio" className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-20">
+            <div>
+                <h1 className="text-3xl font-bold mb-5">My Portfolio</h1>
+                <span className="underline font-semibold">Featured Project</span>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-3 my-5 ">
+
+                    {
+                        cardItems.map(({ id, logo, name }) => (
+                            <div className="md:w-[]300px h-[300px] border-color-black[2px] rounded-lg shadow-lg p-1 cursor-pointer hover:scale-110 duration-300" key={id}>
+                                <img src={logo} className="w-[120px] h-[120px] p-1 rounded-full border-color-black[2px]" alt="" />
+                                <div>
+                                    <div className='px-2 font-bold text-xl mb-2'>{name}</div>
+                                    <p className='px-2 text-gray-600'>Project Description</p>
+                                </div>
+                                <div className='px-6 py-4 space-x-4 justify-around'>
+                                    <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 rounded'>View Project</button>
+                                    <button className='bg-green-500 hover:bg-green-700 text-white font-bold px-4 py-2 rounded'>Source Code</button>
+                                </div>
                             </div>
-                            <div className='px-6 py-4 space-x-4 justify-around'>
-                                <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 rounded'>View Project</button>
-                                <button className='bg-green-500 hover:bg-green-700 text-white font-bold px-4 py-2 rounded'>Source Code</button>
-                            </div>
-                        </div>
-                    ))
-                }
+                        ))
+                    }
+                </div>
             </div>
-         </div>   
-    </div>
-        
-  )
+        </div>
+
+    )
 
 }
 export default Portfolio
